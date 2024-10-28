@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:text="@string/app_name"
+        android:gravity="left|center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="RelativeOverlap,RtlHardcoded">
+    </TextView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginRight="@dimen/L_R_dimen"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="156dp"
+        android:background="@drawable/edittext_bg"
+        android:breakStrategy="simple"
+        android:gravity="top"
+        android:hint="请输入备忘内容"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorTextHint"
+        android:padding="16dp"
+        android:singleLine="false"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,VisualLintTextFieldSize">
+    </EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="48dp"
+        android:text="发送"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:background="@drawable/button_bg"
+        tools:ignore="HardcodedText,RtlHardcoded,VisualLintButtonSize">
+    </Button>
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="56dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/L_R_dimen"
+        android:text="@string/layout_name"
+        android:textColor="@color/colorText"
+        android:background="@drawable/button_bg"
+        tools:ignore="HardcodedText,InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintOverlap">
+    </Button>
+</RelativeLayout>

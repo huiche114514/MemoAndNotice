@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setting_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:text="@string/layout_name"
+        android:gravity="left|center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginRight="@dimen/L_R_dimen"
+        android:background="@drawable/background_bg">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@mipmap/ic_launcher"
+            android:layout_centerHorizontal="true"
+            tools:ignore="ContentDescription,ImageContrastCheck">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:layout_centerHorizontal="true"
+            android:text="制作：huiche"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText">
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginRight="@dimen/L_R_dimen"
+        android:background="@drawable/background_bg">
+    </RelativeLayout>
+</RelativeLayout>
