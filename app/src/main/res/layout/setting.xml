@@ -57,12 +57,4 @@
             tools:ignore="HardcodedText">
         </TextView>
     </RelativeLayout>
-    <!--<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="320dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen"
-        android:background="@drawable/background_bg">
-    </RelativeLayout>-->
 </RelativeLayout>
