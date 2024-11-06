@@ -22,7 +22,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="215dp"
+        android:layout_height="220dp"
         android:layout_marginTop="110dp"
         android:layout_marginLeft="@dimen/L_R_dimen"
         android:layout_marginRight="@dimen/L_R_dimen"
@@ -39,12 +39,12 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="40dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="115dp"
             android:text="@string/app_name"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="32sp"
+            android:textSize="28sp"
             tools:ignore="TextSizeCheck">
         </TextView>
 
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="25dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="185dp"
+            android:layout_marginTop="190dp"
             android:text="制作：huiche"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="16sp"
