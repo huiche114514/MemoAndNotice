@@ -64,6 +64,7 @@
         android:layout_marginEnd="@dimen/L_R_dimen"
         android:text="@string/layout_name"
         android:textColor="@color/colorText"
+        android:textStyle="bold"
         android:background="@drawable/button_bg"
         tools:ignore="HardcodedText,InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintOverlap">
     </Button>
