@@ -51,7 +51,7 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="110dp"
         android:layout_marginTop="300dp"
         android:layout_marginLeft="@dimen/L_R_dimen"
         android:layout_marginRight="@dimen/L_R_dimen"
@@ -71,46 +71,46 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="45dp"
             android:text="版本号："
             android:textColor="?attr/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="45dp"
             android:layout_marginEnd="20dp"
             android:text="1.00正式版"
             android:textColor="?attr/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="75dp"
             android:text="开发者："
             android:textColor="?attr/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="30dp"
+            android:layout_height="25dp"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="75dp"
             android:layout_marginEnd="20dp"
             android:text="HuiChe"
             android:textColor="?attr/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
     </RelativeLayout>
