@@ -1,17 +1,16 @@
 package com.yukiho.cn;
 
-import static com.yukiho.cn.R.color.colorBar;
+import android.annotation.SuppressLint;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 
 public class SettingsActivity extends AppCompatActivity {
     @SuppressLint("MissingInflatedId")
@@ -20,17 +19,28 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.setting);
 
-        // 获取状态栏高度
-
-        // 设置沉浸式状态栏并调整文字颜色
         Window window = getWindow();
-        int statusBarColor = getResources().getColor(colorBar); // 从颜色文件获取状态栏颜色
+        // 获取当前的状态栏颜色
+        int statusBarColor = window.getStatusBarColor();
+        // 清除FLAG_TRANSLUCENT_STATUS和FLAG_TRANSLUCENT_NAVIGATION flags
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        window.getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
+        // 判断当前系统是否为深色模式
+        int uiMode = getResources().getConfiguration().uiMode;
+        boolean isNightMode = (uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
+        if (isNightMode) {
+            // 深色模式下，设置状态栏图标为深色（白色）
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        } else {
+            // 非深色模式下，设置状态栏图标为浅色（黑色）
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        }
+
+        // 设置状态栏颜色
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(statusBarColor); // 设置状态栏颜色
-        window.setNavigationBarColor(statusBarColor); // 设置导航栏颜色与状态栏一致
+        window.setStatusBarColor(statusBarColor);
+        // 设置导航栏颜色与状态栏一致
+        window.setNavigationBarColor(statusBarColor);
 
         // 获取主布局View，并设置窗口插入监听器以处理系统栏的间距
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) View mainView = findViewById(R.id.setting_main);

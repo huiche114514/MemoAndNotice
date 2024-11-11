@@ -4,7 +4,7 @@
     android:id="@+id/setting_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="?attr/backgroundColor"
     tools:context=".SettingsActivity">
 
     <TextView
@@ -16,7 +16,7 @@
         android:gravity="left|center"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="?attr/colorPrimaryDark"
         tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded">
     </TextView>
 
@@ -43,7 +43,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="115dp"
             android:text="@string/app_name"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="?attr/colorPrimaryDark"
             android:textSize="28sp"
             tools:ignore="TextSizeCheck">
         </TextView>
@@ -54,7 +54,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="160dp"
             android:text="版本：v1.00"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="?attr/colorPrimaryDark"
             android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
@@ -65,7 +65,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="190dp"
             android:text="制作：huiche"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="?attr/colorPrimaryDark"
             android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
