@@ -2,11 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.通知备忘" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Customize your dark theme here. -->
-        <!--<item name="colorPrimary">@color/colorPrimary_night</item>
+        <item name="colorPrimary">@color/colorPrimary_night</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark_night</item>
         <item name="backgroundColor">@color/colorBackground_night</item>
         <item name="android:statusBarColor">@color/colorBar_night</item>
         <item name="android:textColorHint">@color/colorTextHint_night</item>
-        <item name="android:textColor">@color/colorText_night</item>-->
+        <item name="android:textColor">@color/colorText_night</item>
     </style>
 </resources>
