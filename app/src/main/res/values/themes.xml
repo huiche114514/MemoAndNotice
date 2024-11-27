@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.通知备忘" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Customize your light theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="backgroundColor">@color/colorBackground</item>
         <item name="android:statusBarColor">@color/colorBar</item>
         <item name="android:textColorHint">@color/colorTextHint</item>
-        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textColor">@color/colorText</item>-->
     </style>
     <style name="Theme.通知备忘" parent="Base.Theme.通知备忘" />
 </resources>
