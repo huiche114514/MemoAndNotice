@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="L_R_dimen">24dp</dimen>
+    <dimen name="Text_L_R_dimen">20dp</dimen>
 </resources>

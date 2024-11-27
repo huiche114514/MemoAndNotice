@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="@dimen/Text_L_R_dimen"
             android:layout_marginTop="10dp"
             android:text="@string/app_info_name"
             android:textColor="?attr/colorPrimaryDark"
@@ -72,7 +72,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="@dimen/Text_L_R_dimen"
             android:layout_marginTop="45dp"
             android:text="@string/version_name"
             android:textColor="?attr/colorPrimaryDark"
@@ -85,7 +85,7 @@
             android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="45dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="@dimen/Text_L_R_dimen"
             android:text="@string/version_number_name"
             android:textColor="?attr/colorPrimaryDark"
             android:textSize="16sp"
@@ -94,7 +94,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="25dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="@dimen/Text_L_R_dimen"
             android:layout_marginTop="75dp"
             android:text="@string/builder_name"
             android:textColor="?attr/colorPrimaryDark"
@@ -107,11 +107,31 @@
             android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="75dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="@dimen/Text_L_R_dimen"
             android:text="@string/dev_name"
             android:textColor="?attr/colorPrimaryDark"
             android:textSize="16sp"
             tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
         </TextView>
     </RelativeLayout>
+    <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="420dp"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginRight="@dimen/L_R_dimen"
+        android:background="@drawable/background_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/Text_L_R_dimen"
+            android:layout_marginTop="10dp"
+            android:text="@string/setting_name"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
+        </TextView>
+    </RelativeLayout>-->
 </RelativeLayout>

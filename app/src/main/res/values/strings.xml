@@ -8,4 +8,5 @@
     <string name="version_number_name">1.00正式版</string>
     <string name="builder_name">开发者：</string>
     <string name="dev_name">HuiChe</string>
+    <string name="setting_name">通用设置</string>
 </resources>
