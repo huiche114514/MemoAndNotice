@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginLeft="@dimen/textView_dimen"
         android:text="@string/app_name"
         android:gravity="left|center"
         android:textSize="30sp"
@@ -21,12 +21,31 @@
     </TextView>
 
     <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="@dimen/L_R_dimen"
+        android:background="@drawable/edittext_bg"
+        android:breakStrategy="simple"
+        android:gravity="top"
+        android:hint="@string/editText_title_name"
+        android:padding="16dp"
+        android:singleLine="false"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorHint="?attr/android:textColorHint"
+        android:maxLength="15"
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
+    </EditText>
+
+    <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="@dimen/L_R_dimen"
         android:layout_marginRight="@dimen/L_R_dimen"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="300dp"
         android:layout_marginBottom="156dp"
         android:background="@drawable/edittext_bg"
         android:breakStrategy="simple"

@@ -6,16 +6,4 @@
     <color name="colorBar">#F1F1F1</color>
     <color name="colorText">#FFFFFF</color>
     <color name="colorTextHint">#7D7D7D</color>
-
-    <color name="md0">@color/material_dynamic_neutral0</color>
-    <color name="md10">@color/material_dynamic_neutral10</color>
-    <color name="md20">@color/material_dynamic_neutral20</color>
-    <color name="md30">@color/material_dynamic_neutral30</color>
-    <color name="md40">@color/material_dynamic_neutral40</color>
-    <color name="md50">@color/material_dynamic_neutral50</color>
-    <color name="md60">@color/material_dynamic_neutral60</color>
-    <color name="md70">@color/material_dynamic_neutral70</color>
-    <color name="md80">@color/material_dynamic_neutral80</color>
-    <color name="md90">@color/material_dynamic_neutral90</color>
-    <color name="md100">@color/material_dynamic_neutral100</color>
 </resources>
