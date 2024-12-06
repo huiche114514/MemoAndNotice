@@ -114,7 +114,7 @@
             tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
         </TextView>
     </RelativeLayout>
-    <!-- <RelativeLayout
+    <!--<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="420dp"
@@ -134,4 +134,16 @@
             tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
         </TextView>
     </RelativeLayout>-->
+    <Button
+        android:id="@+id/devtq"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/L_R_dimen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:text="@string/devTQ"
+        android:background="@drawable/devtq_button_bg"
+        android:textColor="@color/colorPrimaryDark">
+    </Button>
 </RelativeLayout>
