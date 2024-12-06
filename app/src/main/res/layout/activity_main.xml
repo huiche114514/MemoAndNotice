@@ -36,22 +36,22 @@
         android:textColorHint="?attr/android:textColorHint"
         android:padding="16dp"
         android:singleLine="false"
-        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,VisualLintTextFieldSize">
+        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize">
     </EditText>
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_marginStart="@dimen/L_R_dimen"
+        android:layout_marginEnd="90dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="90dp"
         android:layout_marginBottom="48dp"
         android:text="@string/send_name"
         android:textStyle="bold"
         android:textColor="?attr/android:textColor"
         android:background="@drawable/button_bg"
-        tools:ignore="HardcodedText,RtlHardcoded,VisualLintButtonSize">
+        tools:ignore="VisualLintButtonSize">
     </Button>
 
     <Button
@@ -65,7 +65,6 @@
         android:text="@string/layout_name"
         android:textColor="?attr/android:textColor"
         android:textStyle="bold"
-        android:background="@drawable/button_bg"
-        tools:ignore="HardcodedText,InvalidId,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintOverlap">
+        android:background="@drawable/button_bg">
     </Button>
 </RelativeLayout>
