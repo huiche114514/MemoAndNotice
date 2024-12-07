@@ -5,7 +5,6 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -79,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
                     isNotificationShown = false;
                     toggleButton.setText("发送");
                 } else {
-                    if (!content.isEmpty()) { // 只检查内容是否为空
-                        showNotification(title.isEmpty() ? "通知备忘" : title, content); // 如果标题为空，使用默认标题
+                    if (!content.isEmpty()) {
+                        showNotification(title.isEmpty() ? "通知备忘" : title, content);
                         isNotificationShown = true;
                         toggleButton.setText("隐藏");
                     } else {
@@ -106,6 +105,24 @@ public class MainActivity extends AppCompatActivity {
         if (!NotificationManagerCompat.from(this).areNotificationsEnabled()) {
             showNotificationPermissionDialog();
         }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void showNotificationPermissionDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("通知权限")
+                .setMessage("为了接收重要通知，请在设置中开启通知权限。")
+                .setPositiveButton("去设置", (dialog, which) -> {
+                    Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
+                    intent.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                })
+                .setNegativeButton("取消", (dialog, which) -> {
+                    // 用户选择取消，您可以在这里处理取消的情况，例如记录用户的选择或提供其他提示
+                    Toast.makeText(MainActivity.this, "没有通知权限，应用将无法正常工作", Toast.LENGTH_SHORT).show();
+                })
+                .show();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -135,19 +152,5 @@ public class MainActivity extends AppCompatActivity {
     private void cancelNotification() {
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
         notificationManager.cancel(NOTIFICATION_ID);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    private void showNotificationPermissionDialog() {
-        new AlertDialog.Builder(this)
-                .setTitle("需要通知权限")
-                .setMessage("应用需要发送通知以提醒您重要信息。请开启通知权限。")
-                .setPositiveButton("开启", (dialog, which) -> {
-                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                    intent.setData(Uri.parse("package:" + getPackageName()));
-                    startActivity(intent);
-                })
-                .setNegativeButton("取消", null)
-                .show();
     }
 }
