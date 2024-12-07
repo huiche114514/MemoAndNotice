@@ -5,6 +5,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -109,20 +110,46 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void showNotificationPermissionDialog() {
-        new AlertDialog.Builder(this)
-                .setTitle("通知权限")
-                .setMessage("为了接收重要通知，请在设置中开启通知权限。")
-                .setPositiveButton("去设置", (dialog, which) -> {
-                    Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
-                    intent.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    startActivity(intent);
-                })
-                .setNegativeButton("取消", (dialog, which) -> {
-                    // 用户选择取消，您可以在这里处理取消的情况，例如记录用户的选择或提供其他提示
-                    Toast.makeText(MainActivity.this, "没有通知权限，应用将无法正常工作", Toast.LENGTH_SHORT).show();
-                })
-                .show();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AlertDialog dialog = builder.create();
+        dialog.setMessage("为了使应用正常工作，请开启通知权限。");
+
+        // 设置“开启”按钮
+        dialog.setButton(AlertDialog.BUTTON_POSITIVE, "开启", (dialog1, which) -> {
+            Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
+            intent.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
+
+        // 设置“取消”按钮
+        dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "取消", (dialog1, which) ->
+                Toast.makeText(MainActivity.this, "没有通知权限，应用将无法正常工作", Toast.LENGTH_SHORT).show());
+
+        // 显示对话框
+        dialog.show();
+
+        // 根据系统主题设置按钮文本颜色
+        if (isInDarkMode()) {
+            // 深色模式，设置文本颜色为白色
+            Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+            positiveButton.setTextColor(Color.WHITE);
+
+            Button negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+            negativeButton.setTextColor(Color.WHITE);
+        } else {
+            // 非深色模式，可以根据需要设置其他颜色
+            Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+            positiveButton.setTextColor(Color.BLACK);
+
+            Button negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+            negativeButton.setTextColor(Color.BLACK);
+        }
+    }
+
+    private boolean isInDarkMode() {
+        int nightModeFlags = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        return nightModeFlags == Configuration.UI_MODE_NIGHT_YES;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)

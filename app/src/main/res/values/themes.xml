@@ -9,5 +9,8 @@
         <item name="android:textColorHint">@color/colorTextHint</item>
         <item name="android:textColor">@color/colorText</item>
     </style>
+    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
     <style name="Theme.通知备忘" parent="Base.Theme.通知备忘" />
 </resources>
