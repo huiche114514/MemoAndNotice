@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginLeft="@dimen/textView_dimen"
         android:text="@string/layout_name"
         android:gravity="left|center"
         android:textSize="30sp"
