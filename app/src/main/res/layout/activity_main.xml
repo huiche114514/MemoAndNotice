@@ -7,6 +7,17 @@
     android:background="?attr/backgroundColor"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button_info"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/L_R_dimen"
+        android:background="@drawable/app_info"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+    </Button>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="80dp"
@@ -71,16 +82,5 @@
         android:textColor="?attr/android:textColor"
         android:background="@drawable/button_bg"
         tools:ignore="VisualLintButtonSize">
-    </Button>
-
-    <Button
-        android:id="@+id/button_info"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="@dimen/L_R_dimen"
-        android:background="@drawable/app_info"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
     </Button>
 </RelativeLayout>
