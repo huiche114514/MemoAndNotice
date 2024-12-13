@@ -19,7 +19,7 @@ public class SettingsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.setting);
+        setContentView(R.layout.app_info);
 
         // 按钮点击事件
         findViewById(R.id.devtq).setOnClickListener(v -> {

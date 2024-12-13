@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button gotoSettingsButton = findViewById(R.id.button_setting);
+        Button gotoSettingsButton = findViewById(R.id.button_info);
         gotoSettingsButton.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
