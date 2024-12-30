@@ -63,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
             return WindowInsetsCompat.CONSUMED;
         });
 
+        Button gotoSettingsButton = findViewById(R.id.button_info);
+        gotoSettingsButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+        });
+
         Button toggleButton = findViewById(R.id.button);
         final EditText editTextTitle = findViewById(R.id.title);
         final EditText editTextContent = findViewById(R.id.editText);
@@ -89,12 +95,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-        Button gotoSettingsButton = findViewById(R.id.button_info);
-        gotoSettingsButton.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-            startActivity(intent);
-        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -114,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.setMessage("为了使应用正常工作，请开启通知权限。");
 
-        // 设置“开启”按钮
         dialog.setButton(AlertDialog.BUTTON_POSITIVE, "开启", (dialog1, which) -> {
             Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
             intent.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
@@ -122,23 +121,18 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // 设置“取消”按钮
         dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "取消", (dialog1, which) ->
                 Toast.makeText(MainActivity.this, "没有通知权限，应用将无法正常工作", Toast.LENGTH_SHORT).show());
 
-        // 显示对话框
         dialog.show();
 
-        // 根据系统主题设置按钮文本颜色
         if (isInDarkMode()) {
-            // 深色模式，设置文本颜色为白色
             Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
             positiveButton.setTextColor(Color.WHITE);
 
             Button negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
             negativeButton.setTextColor(Color.WHITE);
         } else {
-            // 非深色模式，可以根据需要设置其他颜色
             Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
             positiveButton.setTextColor(Color.BLACK);
 
