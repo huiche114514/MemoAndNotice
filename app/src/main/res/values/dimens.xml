@@ -7,7 +7,7 @@
     <dimen name="xm">24dp</dimen>
     <dimen name="xl">28dp</dimen>
 
-    <dimen name="textView_dimen">24dp</dimen>
+    <dimen name="topBarDimen">24dp</dimen>
     <dimen name="L_R_dimen">16dp</dimen>
     <dimen name="Text_L_R_dimen">20dp</dimen>
 </resources>

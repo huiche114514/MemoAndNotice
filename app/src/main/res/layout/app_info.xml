@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="@dimen/textView_dimen"
+        android:layout_marginLeft="@dimen/topBarDimen"
         android:text="@string/layout_name"
         android:gravity="left|center"
         android:textSize="30sp"
@@ -114,29 +114,9 @@
             tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
         </TextView>
     </RelativeLayout>
-    <!--<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="420dp"
-        android:layout_marginBottom="110dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen"
-        android:background="@drawable/background_bg">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="30dp"
-            android:layout_marginStart="@dimen/Text_L_R_dimen"
-            android:layout_marginTop="10dp"
-            android:text="@string/setting_name"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
-        </TextView>
-    </RelativeLayout>-->
     <Button
         android:id="@+id/devtq"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="@dimen/L_R_dimen"

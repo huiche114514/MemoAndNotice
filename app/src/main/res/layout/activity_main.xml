@@ -7,67 +7,73 @@
     android:background="?attr/backgroundColor"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_info"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="@dimen/L_R_dimen"
-        android:background="@drawable/app_info"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
-    </Button>
-
-    <TextView
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="@dimen/textView_dimen"
-        android:text="@string/app_name"
-        android:gravity="left|center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="?attr/colorPrimaryDark"
-        tools:ignore="RelativeOverlap,RtlHardcoded">
-    </TextView>
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/topBarDimen"
+        android:layout_marginEnd="@dimen/topBarDimen"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimaryDark"
+            tools:ignore="RelativeOverlap,RtlHardcoded">
+        </TextView>
 
-    <EditText
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
+        <Button
+            android:id="@+id/button_info"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/app_info"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
-        android:layout_marginRight="@dimen/L_R_dimen"
-        android:background="@drawable/edittext_bg"
-        android:breakStrategy="simple"
-        android:gravity="top"
-        android:hint="@string/editText_title_name"
-        android:padding="16dp"
-        android:singleLine="false"
-        android:textColor="?attr/colorPrimaryDark"
-        android:textColorHint="?attr/android:textColorHint"
-        android:maxLength="15"
-        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
-    </EditText>
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen"
-        android:layout_marginTop="200dp"
         android:layout_marginBottom="156dp"
-        android:background="@drawable/edittext_bg"
-        android:breakStrategy="simple"
-        android:gravity="top"
-        android:hint="@string/editText_hint_name"
-        android:textColor="?attr/colorPrimaryDark"
-        android:textColorHint="?attr/android:textColorHint"
-        android:padding="16dp"
-        android:singleLine="false"
-        tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize">
-    </EditText>
+        android:layout_marginLeft="@dimen/L_R_dimen"
+        android:layout_marginRight="@dimen/L_R_dimen">
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/editText_title_name"
+            android:gravity="top"
+            android:padding="16dp"
+            android:breakStrategy="simple"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textColorHint="?attr/android:textColorHint"
+            android:singleLine="false"
+            android:maxLength="15"
+            tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/editText_hint_name"
+            android:gravity="top"
+            android:padding="16dp"
+            android:breakStrategy="simple"
+            android:textColor="?attr/colorPrimaryDark"
+            android:textColorHint="?attr/android:textColorHint"
+            android:singleLine="false"
+            tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize">
+        </EditText>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/button"
