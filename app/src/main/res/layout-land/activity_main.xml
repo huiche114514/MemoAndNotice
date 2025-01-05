@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="?attr/backgroundColor"
     tools:context=".MainActivity">
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,7 +22,6 @@
             android:textColor="?attr/colorPrimaryDark"
             tools:ignore="RelativeOverlap,RtlHardcoded">
         </TextView>
-
         <Button
             android:id="@+id/button_info"
             android:layout_width="28dp"
@@ -35,7 +33,6 @@
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
         </Button>
     </RelativeLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -59,12 +56,10 @@
             android:maxLength="15"
             tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
         </EditText>
-
         <Space
             android:layout_width="10dp"
             android:layout_height="wrap_content">
         </Space>
-
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
@@ -83,7 +78,6 @@
                 android:singleLine="false"
                 tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize">
             </EditText>
-
             <Button
                 android:id="@+id/button"
                 android:layout_width="match_parent"

@@ -19,7 +19,6 @@
         android:textColor="?attr/colorPrimaryDark"
         tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded">
     </TextView>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -27,7 +26,6 @@
         android:layout_marginLeft="@dimen/L_R_dimen"
         android:layout_marginRight="@dimen/L_R_dimen"
         android:background="@drawable/background_bg">
-
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -36,7 +34,6 @@
             android:layout_centerHorizontal="true"
             tools:ignore="ContentDescription,ImageContrastCheck">
         </ImageView>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -56,7 +53,6 @@
         android:layout_marginLeft="@dimen/L_R_dimen"
         android:layout_marginRight="@dimen/L_R_dimen"
         android:background="@drawable/background_bg">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="30dp"
@@ -68,7 +64,6 @@
             android:textStyle="bold"
             tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
         </TextView>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="25dp"
@@ -79,7 +74,6 @@
             android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="25dp"
@@ -101,7 +95,6 @@
             android:textSize="16sp"
             tools:ignore="HardcodedText,TextSizeCheck">
         </TextView>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="25dp"
