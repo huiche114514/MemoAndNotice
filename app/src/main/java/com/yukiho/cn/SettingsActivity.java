@@ -21,9 +21,9 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_info);
 
-        findViewById(R.id.devtq).setOnClickListener(v -> {
+        findViewById(R.id.tgChat).setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://afdian.com/a/yixiaziquancile"));
+            intent.setData(Uri.parse("https://t.me/+tP3wEh5cNsUzODI1"));
             startActivity(intent);
         });
 

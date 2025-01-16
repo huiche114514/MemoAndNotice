@@ -6,8 +6,10 @@
     <string name="layout_name">关于</string>
     <string name="app_info_name">应用信息</string>
     <string name="version_name">版本号：</string>
-    <string name="version_number_name">V1.16</string>
+    <string name="version_number_name">V1.25</string>
     <string name="builder_name">开发者：</string>
     <string name="dev_name">HuiChe</string>
-    <string name="devTQ">支持开发</string>
+    <string name="tgChat">加入频道</string>
+    <string name="tgChatHint">欢迎杂谈吹水|反馈|建议</string>
+    <string name="gotoTG">跳转</string>
 </resources>
