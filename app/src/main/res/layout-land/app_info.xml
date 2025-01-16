@@ -4,7 +4,6 @@
     android:id="@+id/setting_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="@dimen/L_R_dimen"
     android:background="?attr/backgroundColor"
     tools:context=".SettingsActivity">
     <RelativeLayout
