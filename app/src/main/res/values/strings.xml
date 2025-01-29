@@ -1,12 +1,13 @@
 <resources>
     <string name="app_name">通知备忘</string>
+    <string name="egg">喵~</string>
     <string name="editText_title_name">标题内容</string>
     <string name="editText_hint_name">备忘内容</string>
     <string name="send_name">发送</string>
     <string name="layout_name">关于</string>
     <string name="app_info_name">应用信息</string>
     <string name="version_name">版本号：</string>
-    <string name="version_number_name">V1.25</string>
+    <string name="version_number_name">Debug</string>
     <string name="builder_name">开发者：</string>
     <string name="dev_name">HuiChe</string>
     <string name="tgChat">加入频道</string>

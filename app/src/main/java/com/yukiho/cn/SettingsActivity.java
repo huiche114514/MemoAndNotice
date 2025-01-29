@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -26,6 +27,9 @@ public class SettingsActivity extends AppCompatActivity {
             intent.setData(Uri.parse("https://t.me/+tP3wEh5cNsUzODI1"));
             startActivity(intent);
         });
+
+        findViewById(R.id.Egg).setOnClickListener(view ->
+                Toast.makeText(SettingsActivity.this, R.string.egg,Toast.LENGTH_SHORT).show());
 
         Window window = getWindow();
         int statusBarColor = window.getStatusBarColor();

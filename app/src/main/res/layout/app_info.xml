@@ -35,6 +35,7 @@
             tools:ignore="ContentDescription,ImageContrastCheck">
         </ImageView>
         <TextView
+            android:id="@+id/Egg"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_centerHorizontal="true"
