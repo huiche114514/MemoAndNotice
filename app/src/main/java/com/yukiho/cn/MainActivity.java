@@ -31,11 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         ImmersiveUtils.setImmersiveMode(this);
 
-        boolean isDarkMode = ThemeUtils.isSystemInDarkMode(this);
-
-        NotificationPermissionManager permissionManager = new NotificationPermissionManager(this, isDarkMode);
-        permissionManager.checkAndRequestNotificationPermission();
-
         View mainView = findViewById(R.id.main);
         ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -43,9 +38,20 @@ public class MainActivity extends AppCompatActivity {
             return WindowInsetsCompat.CONSUMED;
         });
 
-        Button gotoSettingsButton = findViewById(R.id.button_info);
-        gotoSettingsButton.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+        boolean isDarkMode = ThemeUtils.isSystemInDarkMode(this);
+
+        NotificationPermissionManager permissionManager = new NotificationPermissionManager(this, isDarkMode);
+        permissionManager.checkAndRequestNotificationPermission();
+
+        Button gotoSettingButton = findViewById(R.id.button_setting);
+        gotoSettingButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+            startActivity(intent);
+        });
+
+        Button gotoInfoButton = findViewById(R.id.button_info);
+        gotoInfoButton.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this, InfoActivity.class);
             startActivity(intent);
         });
 

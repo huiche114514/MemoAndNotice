@@ -13,4 +13,5 @@
     <string name="tgChat">加入频道</string>
     <string name="tgChatHint">欢迎杂谈吹水|反馈|建议</string>
     <string name="gotoTG">跳转</string>
+    <string name="setting_name">设置</string>
 </resources>

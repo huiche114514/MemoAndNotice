@@ -32,6 +32,17 @@
             android:background="@drawable/app_info"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
         </Button>
+        <Button
+            android:id="@+id/button_setting"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="@drawable/app_info"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+        </Button>
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
