@@ -6,6 +6,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsCompat.Type;
+
 public class ImmersiveUtils {
 
     public static void setImmersiveMode(Activity activity) {
@@ -25,5 +30,16 @@ public class ImmersiveUtils {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(statusBarColor);
         window.setNavigationBarColor(statusBarColor);
+
+        setWindowInsetsListener(activity);
+    }
+
+    private static void setWindowInsetsListener(Activity activity) {
+        View mainView = activity.findViewById(android.R.id.content);
+        ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
+            Insets systemBars = insets.getInsets(Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return WindowInsetsCompat.CONSUMED;
+        });
     }
 }
