@@ -4,5 +4,4 @@
 ##### Made by HuiChe
 ##### 2024.10.03
 
-## License
-#### 项目遵循MIT开源协议
+## License 项目遵循MIT开源协议
