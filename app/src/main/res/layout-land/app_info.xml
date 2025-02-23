@@ -181,6 +181,35 @@
                     tools:ignore="RelativeOverlap,TextSizeCheck">
                 </TextView>
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/button_ripple_bg"
+                android:paddingHorizontal="@dimen/Text_L_R_dimen"
+                android:paddingVertical="5dp"
+                tools:ignore="UselessParent,TextSizeCheck">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/ty"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry,TextSizeCheck">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/tyHint"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap,TextSizeCheck">
+                </TextView>
+            </LinearLayout>
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
