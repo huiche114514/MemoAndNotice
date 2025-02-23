@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="@dimen/topBarDimen"
+            android:layout_marginLeft="@dimen/topBarDimen_land"
             android:text="@string/layout_name"
             android:gravity="left|center"
             android:textSize="30sp"
@@ -27,8 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="240dp"
             android:layout_marginTop="110dp"
-            android:layout_marginLeft="@dimen/L_R_dimen"
-            android:layout_marginRight="@dimen/L_R_dimen"
+            android:layout_marginLeft="@dimen/L_R_dimen_land"
+            android:layout_marginRight="@dimen/L_R_dimen_land"
             android:orientation="horizontal"
             android:background="@drawable/background_bg">
             <RelativeLayout
@@ -117,57 +117,69 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="360dp"
-            android:layout_marginLeft="@dimen/L_R_dimen"
-            android:layout_marginRight="@dimen/L_R_dimen"
-            android:paddingStart="@dimen/Text_L_R_dimen"
-            android:paddingEnd="@dimen/Text_L_R_dimen"
-            android:orientation="horizontal"
-            android:background="@drawable/background_bg">
+            android:layout_marginLeft="@dimen/L_R_dimen_land"
+            android:layout_marginRight="@dimen/L_R_dimen_land"
+            android:background="@drawable/background_bg"
+            android:orientation="vertical">
             <LinearLayout
-                android:layout_width="256dp"
-                android:layout_height="match_parent"
-                android:gravity="center"
+                android:id="@+id/tgChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
+                android:background="@drawable/button_ripple_bg"
+                android:paddingHorizontal="@dimen/Text_L_R_dimen"
+                android:paddingVertical="5dp"
                 tools:ignore="UselessParent,TextSizeCheck">
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:text="@string/tgChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/qqChat"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="28sp"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:ignore="RtlSymmetry">
+                    tools:ignore="RtlSymmetry,TextSizeCheck">
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="20dp"
                     android:gravity="center"
-                    android:text="@string/tgChatHint"
+                    android:text="@string/qqChatHint"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="14sp">
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap,TextSizeCheck">
                 </TextView>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/Github"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingStart="@dimen/L_R_dimen"
-                android:paddingEnd="0dp"
-                android:paddingVertical="24dp">
-                <Button
-                    android:id="@+id/tgChat"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/tg_button_bg"
-                    android:text="@string/gotoTG"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/button_ripple_bg"
+                android:paddingHorizontal="@dimen/Text_L_R_dimen"
+                android:paddingVertical="5dp"
+                tools:ignore="UselessParent,TextSizeCheck">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/github"
                     android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck,VisualLintButtonSize">
-                </Button>
+                    tools:ignore="RtlSymmetry,TextSizeCheck">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/githubHint"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap,TextSizeCheck">
+                </TextView>
             </LinearLayout>
         </LinearLayout>
     </RelativeLayout>

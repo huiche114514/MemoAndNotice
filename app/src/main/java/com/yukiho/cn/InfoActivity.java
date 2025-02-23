@@ -19,7 +19,19 @@ public class InfoActivity extends AppCompatActivity {
 
         findViewById(R.id.tgChat).setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://t.me/+tP3wEh5cNsUzODI1"));
+            intent.setData(Uri.parse("https://pd.qq.com/s/91nwu8560?shareSource=5&businessType=9"));
+            startActivity(intent);
+        });
+
+        findViewById(R.id.Github).setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://github.com/huiche114514/MemoAndNotice"));
+            startActivity(intent);
+        });
+
+        findViewById(R.id.ty).setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://afdian.com/a/yixiaziquancile"));
             startActivity(intent);
         });
 

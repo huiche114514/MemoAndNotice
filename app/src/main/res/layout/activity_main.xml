@@ -36,11 +36,11 @@
             android:id="@+id/button_setting"
             android:layout_width="28dp"
             android:layout_height="28dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="40dp"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:background="@drawable/app_info"
+            android:background="@drawable/settings_ic"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
         </Button>
     </RelativeLayout>
@@ -90,7 +90,7 @@
         android:layout_marginEnd="@dimen/L_R_dimen"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="48dp"
-        android:text="@string/send_name"
+        android:text="@string/send"
         android:textStyle="bold"
         android:textColor="?attr/android:textColor"
         android:background="@drawable/button_bg"

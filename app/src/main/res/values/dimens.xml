@@ -8,7 +8,8 @@
     <dimen name="xl">28dp</dimen>
 
     <dimen name="topBarDimen">24dp</dimen>
+    <dimen name="topBarDimen_land">36dp</dimen>
     <dimen name="L_R_dimen">16dp</dimen>
-    <dimen name="L_R_dimen_land">32dp</dimen>
+    <dimen name="L_R_dimen_land">28dp</dimen>
     <dimen name="Text_L_R_dimen">20dp</dimen>
 </resources>

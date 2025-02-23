@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
                 if (isNotificationShown) {
                     cancelNotification();
                     isNotificationShown = false;
-                    toggleButton.setText("发送");
+                    toggleButton.setText(R.string.send);
                 } else {
                     if (!content.isEmpty()) {
                         showNotification(title.isEmpty() ? "通知备忘" : title, content);
                         isNotificationShown = true;
-                        toggleButton.setText("隐藏");
+                        toggleButton.setText(R.string.hide);
                     } else {
                         Toast.makeText(MainActivity.this, "内容不能为空", Toast.LENGTH_SHORT).show();
                     }
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setContentTitle(title)
                 .setContentText(content)
-                .setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setSmallIcon(R.drawable.notification_ic)
                 .setOngoing(true);
 
         notificationManager.notify(NOTIFICATION_ID, builder.build());

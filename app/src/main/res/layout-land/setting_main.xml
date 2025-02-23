@@ -2,15 +2,60 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="?attr/backgroundColor">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/topBarDimen_land"
             android:text="@string/setting_name"
-            android:textColor="?attr/colorPrimaryDark">
+            android:gravity="left|center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimaryDark"
+            tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded">
         </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="@dimen/L_R_dimen_land"
+            android:layout_marginRight="@dimen/L_R_dimen_land"
+            android:orientation="vertical"
+            android:background="@drawable/background_bg">
+            <LinearLayout
+                android:id="@+id/KeepApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/button_ripple_bg"
+                android:paddingHorizontal="@dimen/Text_L_R_dimen"
+                android:paddingVertical="5dp"
+                tools:ignore="UselessParent,TextSizeCheck">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/keep_app"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry,TextSizeCheck">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="@string/keep_app_hint"
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:textSize="14sp"
+                    tools:ignore="RelativeOverlap,TextSizeCheck">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
     </RelativeLayout>
 </ScrollView>
