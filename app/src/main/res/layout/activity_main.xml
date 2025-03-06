@@ -46,26 +46,58 @@
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:layout_marginTop="110dp"
-        android:layout_marginBottom="156dp"
         android:layout_marginLeft="@dimen/L_R_dimen"
         android:layout_marginRight="@dimen/L_R_dimen">
-        <EditText
-            android:id="@+id/title"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@drawable/edittext_bg"
-            android:hint="@string/editText_title_name"
-            android:gravity="top"
-            android:padding="16dp"
-            android:breakStrategy="simple"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textColorHint="?attr/android:textColorHint"
-            android:singleLine="false"
-            android:maxLength="15"
-            tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
-        </EditText>
+            android:layout_height="80dp">
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/editText_title_name"
+                android:gravity="top"
+                android:padding="16dp"
+                android:breakStrategy="simple"
+                android:textSize="16sp"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textColorHint="?attr/android:textColorHint"
+                android:singleLine="false"
+                android:maxLength="15"
+                tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
+            </EditText>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="match_parent">
+            </Space>
+            <LinearLayout
+                android:id="@+id/notice_pic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_bg">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_ripple_bg"
+                    android:padding="16dp"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:id="@+id/pic_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pic_xz"
+                        android:textColor="?attr/android:textColorHint"
+                        android:textSize="16sp"
+                        tools:ignore="TextContrastCheck">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
@@ -76,6 +108,7 @@
             android:gravity="top"
             android:padding="16dp"
             android:breakStrategy="simple"
+            android:textSize="16sp"
             android:textColor="?attr/colorPrimaryDark"
             android:textColorHint="?attr/android:textColorHint"
             android:singleLine="false"

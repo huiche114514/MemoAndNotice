@@ -3,11 +3,14 @@ package com.yukiho.cn;
 import android.annotation.SuppressLint;
 import android.app.NotificationManager;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
@@ -16,9 +19,8 @@ import androidx.core.app.NotificationCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String CHANNEL_ID = "channel_id";
     private boolean isNotificationShown = false;
-    private final int NOTIFICATION_ID = 1;
+    private LargeIconHelper largeIconHelper;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -27,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImmersiveUtils.setImmersiveMode(this);
-
         boolean isDarkMode = ThemeUtils.isSystemInDarkMode(this);
 
         NotificationPermissionManager permissionManager = new NotificationPermissionManager(this, isDarkMode);
@@ -44,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, InfoActivity.class);
             startActivity(intent);
         });
+
+        TextView picText = findViewById(R.id.pic_text);
+        largeIconHelper = new LargeIconHelper(this, picText);
+        LinearLayout noticePic = findViewById(R.id.notice_pic);
+        noticePic.setOnClickListener(v -> largeIconHelper.handleImageSelection());
 
         Button toggleButton = findViewById(R.id.button);
         final EditText editTextTitle = findViewById(R.id.title);
@@ -73,20 +79,32 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        largeIconHelper.handleImageResult(requestCode, resultCode, data);
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void showNotification(String title, String content) {
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, "channel_id")
                 .setContentTitle(title)
                 .setContentText(content)
                 .setSmallIcon(R.drawable.notification_ic)
                 .setOngoing(true);
 
-        notificationManager.notify(NOTIFICATION_ID, builder.build());
+        // 如果用户选择了大图标，则设置大图标
+        Bitmap largeIconBitmap = largeIconHelper.getLargeIconBitmap();
+        if (largeIconBitmap != null) {
+            builder.setLargeIcon(largeIconBitmap);
+        }
+
+        notificationManager.notify(1, builder.build());
     }
 
     private void cancelNotification() {
         NotificationManager notificationManager = getSystemService(NotificationManager.class);
-        notificationManager.cancel(NOTIFICATION_ID);
+        notificationManager.cancel(1);
     }
 }

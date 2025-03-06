@@ -52,28 +52,65 @@
         android:orientation="horizontal"
         android:layout_marginStart="@dimen/L_R_dimen_land"
         android:layout_marginEnd="@dimen/L_R_dimen_land">
-        <EditText
-            android:id="@+id/title"
-            android:layout_width="280dp"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="@drawable/edittext_bg"
-            android:hint="@string/editText_title_name"
-            android:gravity="top"
-            android:padding="16dp"
-            android:breakStrategy="simple"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textColorHint="?attr/android:textColorHint"
-            android:singleLine="false"
-            android:maxLength="15"
-            tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
-        </EditText>
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/notice_pic"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_bg"
+                tools:ignore="NestedWeights">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_ripple_bg"
+                    android:padding="16dp"
+                    tools:ignore="UselessParent">
+                    <TextView
+                        android:id="@+id/pic_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pic_xz"
+                        android:textColor="?attr/android:textColorHint"
+                        android:textSize="16sp"
+                        tools:ignore="TextContrastCheck">
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp">
+            </Space>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:background="@drawable/edittext_bg"
+                android:hint="@string/editText_title_name"
+                android:gravity="top"
+                android:padding="16dp"
+                android:breakStrategy="simple"
+                android:textSize="16sp"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textColorHint="?attr/android:textColorHint"
+                android:singleLine="false"
+                android:maxLength="15"
+                tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
+            </EditText>
+        </LinearLayout>
         <Space
             android:layout_width="10dp"
             android:layout_height="wrap_content">
         </Space>
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="match_parent"
@@ -84,6 +121,7 @@
                 android:gravity="top"
                 android:padding="16dp"
                 android:breakStrategy="simple"
+                android:textSize="16sp"
                 android:textColor="?attr/colorPrimaryDark"
                 android:textColorHint="?attr/android:textColorHint"
                 android:singleLine="false"

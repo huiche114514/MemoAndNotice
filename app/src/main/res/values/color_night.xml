@@ -2,8 +2,11 @@
 <resources>
     <color name="colorPrimary_night">#1C1C1E</color>
     <color name="colorPrimaryDark_night">#FFFFFF</color>
+
     <color name="colorBackground_night">#000000</color>
+
     <color name="colorBar_night">#000000</color>
+
     <color name="colorText_night">#000000</color>
     <color name="colorTextHint_night">#7D7D7D</color>
 </resources>
