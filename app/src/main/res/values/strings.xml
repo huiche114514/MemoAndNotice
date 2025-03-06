@@ -24,4 +24,7 @@
 
     <string name="keep_app">后台保活</string>
     <string name="keep_app_hint">允许应用保留后台</string>
+
+    <string name="dark_mode">深色模式</string>
+    <string name="dark_mode_hiht">开启后，应用将保持深色模式</string>
 </resources>

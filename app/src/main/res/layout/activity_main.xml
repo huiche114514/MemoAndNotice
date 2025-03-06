@@ -86,12 +86,11 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="@dimen/L_R_dimen"
         android:layout_marginEnd="@dimen/L_R_dimen"
-        android:layout_alignParentBottom="true"
         android:layout_marginBottom="48dp"
         android:text="@string/send"
-        android:textStyle="bold"
         android:textColor="?attr/android:textColor"
         android:background="@drawable/button_bg"
         tools:ignore="VisualLintButtonSize">

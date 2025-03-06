@@ -95,7 +95,6 @@
                 android:layout_height="60dp"
                 android:layout_alignParentBottom="true"
                 android:text="@string/send"
-                android:textStyle="bold"
                 android:textColor="?attr/android:textColor"
                 android:background="@drawable/button_bg"
                 tools:ignore="VisualLintButtonSize">

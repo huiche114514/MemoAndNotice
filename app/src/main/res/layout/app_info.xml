@@ -46,10 +46,11 @@
             tools:ignore="TextSizeCheck">
         </TextView>
     </RelativeLayout>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
+        android:orientation="vertical"
         android:paddingVertical="10dp"
         android:paddingHorizontal="@dimen/Text_L_R_dimen"
         android:layout_marginLeft="@dimen/L_R_dimen"
@@ -61,53 +62,64 @@
             android:gravity="center"
             android:text="@string/app_info_name"
             android:textColor="?attr/colorPrimaryDark"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:textSize="18sp"
             tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
         </TextView>
-        <TextView
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </Space>
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:gravity="center"
-            android:layout_marginTop="35dp"
-            android:text="@string/version_name"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText,TextSizeCheck">
-        </TextView>
-        <TextView
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="@string/version_name"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextSizeCheck">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:text="@string/version_number_name"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
+            </TextView>
+        </RelativeLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </Space>
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:gravity="center"
-            android:layout_marginTop="35dp"
-            android:layout_alignParentEnd="true"
-            android:text="@string/version_number_name"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textSize="14sp"
-            tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:gravity="center"
-            android:layout_marginTop="65dp"
-            android:text="@string/builder_name"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textSize="16sp"
-            tools:ignore="HardcodedText,TextSizeCheck">
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:gravity="center"
-            android:layout_marginTop="65dp"
-            android:layout_alignParentEnd="true"
-            android:text="@string/dev_name"
-            android:textColor="?attr/colorPrimaryDark"
-            android:textSize="14sp"
-            tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
-        </TextView>
-    </RelativeLayout>
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:text="@string/builder_name"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextSizeCheck">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:text="@string/dev_name"
+                android:textColor="?attr/colorPrimaryDark"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
+            </TextView>
+        </RelativeLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -131,8 +143,7 @@
                 android:gravity="center"
                 android:text="@string/qqChat"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="18sp"
                 tools:ignore="RtlSymmetry,TextSizeCheck">
             </TextView>
             <TextView
@@ -160,8 +171,7 @@
                 android:gravity="center"
                 android:text="@string/github"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="18sp"
                 tools:ignore="RtlSymmetry,TextSizeCheck">
             </TextView>
             <TextView
@@ -189,8 +199,7 @@
                 android:gravity="center"
                 android:text="@string/ty"
                 android:textColor="?attr/colorPrimaryDark"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:textSize="18sp"
                 tools:ignore="RtlSymmetry,TextSizeCheck">
             </TextView>
             <TextView

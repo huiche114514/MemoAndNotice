@@ -44,8 +44,7 @@
                     android:gravity="center"
                     android:text="@string/keep_app"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
+                    android:textSize="18sp"
                     tools:ignore="RtlSymmetry,TextSizeCheck">
                 </TextView>
                 <TextView
@@ -58,6 +57,49 @@
                     tools:ignore="RelativeOverlap,TextSizeCheck">
                 </TextView>
             </LinearLayout>
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_ripple_bg"
+                android:baselineAligned="false"
+                android:paddingHorizontal="@dimen/Text_L_R_dimen"
+                android:paddingVertical="5dp"
+                tools:ignore="UselessParent,TextSizeCheck">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/dark_mode"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="18sp"
+                        tools:ignore="RtlSymmetry,TextSizeCheck">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="@string/dark_mode_hiht"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="14sp"
+                        tools:ignore="RelativeOverlap,TextSizeCheck">
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/DarkMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </com.google.android.material.switchmaterial.SwitchMaterial>
+                </LinearLayout>
+            </LinearLayout>-->
         </LinearLayout>
     </RelativeLayout>
 </ScrollView>
