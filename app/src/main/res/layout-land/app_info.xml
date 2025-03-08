@@ -4,6 +4,7 @@
     android:id="@+id/info_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/L_R_dimen_land"
     android:background="?attr/backgroundColor"
     tools:context=".InfoActivity">
     <RelativeLayout
@@ -15,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="@dimen/topBarDimen_land"
+            android:layout_marginLeft="@dimen/Toolbar_dimen"
             android:text="@string/layout_name"
             android:gravity="left|center"
             android:textSize="30sp"
@@ -27,8 +28,6 @@
             android:layout_width="match_parent"
             android:layout_height="240dp"
             android:layout_marginTop="110dp"
-            android:layout_marginLeft="@dimen/L_R_dimen_land"
-            android:layout_marginRight="@dimen/L_R_dimen_land"
             android:orientation="horizontal"
             android:background="@drawable/background_bg">
             <RelativeLayout
@@ -135,8 +134,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="360dp"
-            android:layout_marginLeft="@dimen/L_R_dimen_land"
-            android:layout_marginRight="@dimen/L_R_dimen_land"
             android:background="@drawable/background_bg"
             android:orientation="vertical">
             <LinearLayout

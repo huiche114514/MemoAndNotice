@@ -4,13 +4,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/L_R_dimen"
     android:background="?attr/backgroundColor"
     tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/topBarDimen"
-        android:layout_marginEnd="@dimen/topBarDimen"
+        android:layout_marginHorizontal="@dimen/Toolbar_dimen"
         android:layout_marginTop="16dp">
         <TextView
             android:layout_width="wrap_content"
@@ -44,15 +44,15 @@
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
         </Button>
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginTop="110dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen">
+        android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp">
+            android:layout_height="0dp"
+            android:layout_weight="1">
             <EditText
                 android:id="@+id/title"
                 android:layout_width="0dp"
@@ -68,7 +68,7 @@
                 android:textColorHint="?attr/android:textColorHint"
                 android:singleLine="false"
                 android:maxLength="15"
-                tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize,DuplicateSpeakableTextCheck">
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck,NestedWeights,TextContrastCheck,TextFields,VisualLintTextFieldSize">
             </EditText>
             <Space
                 android:layout_width="10dp"
@@ -98,11 +98,15 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+        </Space>
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="90dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:background="@drawable/edittext_bg"
             android:hint="@string/editText_hint_name"
             android:gravity="top"
@@ -114,14 +118,12 @@
             android:singleLine="false"
             tools:ignore="Autofill,TextContrastCheck,TextFields,VisualLintTextFieldSize">
         </EditText>
-    </RelativeLayout>
+    </LinearLayout>
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="@dimen/L_R_dimen"
-        android:layout_marginEnd="@dimen/L_R_dimen"
         android:layout_marginBottom="48dp"
         android:text="@string/send"
         android:textColor="?attr/android:textColor"

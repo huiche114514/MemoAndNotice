@@ -5,7 +5,9 @@
     <string name="setting_name">设置</string>
 
     <string name="pic_xz">点击选择大图标</string>
+    <string name="pic_xz_hint">图标已选择</string>
     <string name="pic_qc">已选择（再次点击以清除大图标）</string>
+    <string name="pic_qc_hint">图标已清除</string>
     <string name="editText_title_name">标题内容</string>
     <string name="editText_hint_name">备忘内容</string>
     <string name="send">发送</string>

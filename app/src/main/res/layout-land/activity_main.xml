@@ -4,13 +4,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/L_R_dimen_land"
     android:background="?attr/backgroundColor"
     tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/topBarDimen_land"
-        android:layout_marginEnd="@dimen/topBarDimen_land"
+        android:layout_marginHorizontal="@dimen/Toolbar_dimen"
         android:layout_marginTop="16dp">
         <TextView
             android:layout_width="wrap_content"
@@ -49,9 +49,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="110dp"
         android:layout_marginBottom="16dp"
-        android:orientation="horizontal"
-        android:layout_marginStart="@dimen/L_R_dimen_land"
-        android:layout_marginEnd="@dimen/L_R_dimen_land">
+        android:orientation="horizontal">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"

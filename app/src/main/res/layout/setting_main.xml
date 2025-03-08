@@ -5,6 +5,7 @@
     tools:context=".SettingActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/L_R_dimen"
     android:background="?attr/backgroundColor">
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="@dimen/topBarDimen"
+            android:layout_marginLeft="@dimen/Toolbar_dimen"
             android:text="@string/setting_name"
             android:gravity="left|center"
             android:textSize="30sp"
@@ -25,8 +26,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="110dp"
-            android:layout_marginLeft="@dimen/L_R_dimen"
-            android:layout_marginRight="@dimen/L_R_dimen"
             android:orientation="vertical"
             android:background="@drawable/background_bg">
             <LinearLayout

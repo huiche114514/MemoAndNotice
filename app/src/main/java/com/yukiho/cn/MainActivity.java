@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
                 .setSmallIcon(R.drawable.notification_ic)
                 .setOngoing(true);
 
-        // 如果用户选择了大图标，则设置大图标
         Bitmap largeIconBitmap = largeIconHelper.getLargeIconBitmap();
         if (largeIconBitmap != null) {
             builder.setLargeIcon(largeIconBitmap);

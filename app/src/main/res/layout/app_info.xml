@@ -4,13 +4,14 @@
     android:id="@+id/info_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/L_R_dimen"
     android:background="?attr/backgroundColor"
     tools:context=".InfoActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="@dimen/topBarDimen"
+        android:layout_marginLeft="@dimen/Toolbar_dimen"
         android:text="@string/layout_name"
         android:gravity="left|center"
         android:textSize="30sp"
@@ -22,8 +23,6 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_marginTop="110dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen"
         android:background="@drawable/background_bg">
         <ImageView
             android:layout_width="100dp"
@@ -53,8 +52,6 @@
         android:orientation="vertical"
         android:paddingVertical="10dp"
         android:paddingHorizontal="@dimen/Text_L_R_dimen"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen"
         android:background="@drawable/background_bg">
         <TextView
             android:layout_width="wrap_content"
@@ -124,8 +121,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="420dp"
-        android:layout_marginLeft="@dimen/L_R_dimen"
-        android:layout_marginRight="@dimen/L_R_dimen"
         android:background="@drawable/background_bg"
         android:orientation="vertical">
         <LinearLayout

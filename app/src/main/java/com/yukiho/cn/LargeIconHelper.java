@@ -24,7 +24,6 @@ public class LargeIconHelper {
 
     public void handleImageSelection() {
         if (largeIconBitmap != null) {
-            // 如果已经选择了大图标，则清除
             largeIconBitmap = null;
             picText.setText(R.string.pic_xz);
         } else {
@@ -36,10 +35,9 @@ public class LargeIconHelper {
     public void handleImageResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE_PICK_IMAGE && resultCode == MainActivity.RESULT_OK && data != null) {
             Uri selectedImageUri = data.getData();
-
             try {
                 largeIconBitmap = MediaStore.Images.Media.getBitmap(context.getContentResolver(), selectedImageUri);
-                picText.setText(R.string.pic_qc); // 修改提示文本
+                picText.setText(R.string.pic_qc);
             } catch (IOException e) {
                 e.printStackTrace();
             }
