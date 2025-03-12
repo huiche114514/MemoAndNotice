@@ -1,31 +1,31 @@
 <resources>
-    <string name="egg">喵~</string>
-    <string name="app_name">通知备忘</string>
-    <string name="layout_name">关于</string>
-    <string name="setting_name">设置</string>
+    <string name="egg">Meow~</string>
+    <string name="app_name">Memo and notice</string>
+    <string name="layout_name">About</string>
+    <string name="setting_name">Settings</string>
 
-    <string name="pic_xz">点击选择大图标</string>
-    <string name="pic_xz_hint">图标已选择</string>
-    <string name="pic_qc">已选择（再次点击以清除大图标）</string>
-    <string name="pic_qc_hint">图标已清除</string>
-    <string name="editText_title_name">标题内容</string>
-    <string name="editText_hint_name">备忘内容</string>
-    <string name="send">发送</string>
-    <string name="hide">隐藏</string>
+    <string name="pic_xz">Tap to select a large icon</string>
+    <string name="pic_xz_hint">Icon selected</string>
+    <string name="pic_qc">Selected (tap again to clear the large icon)</string>
+    <string name="pic_qc_hint">Icon cleared</string>
+    <string name="editText_title_name">Title</string>
+    <string name="editText_hint_name">Memo content</string>
+    <string name="send">Send</string>
+    <string name="hide">Hide</string>
 
-    <string name="app_info_name">应用信息</string>
-    <string name="version_name">版本号：</string>
+    <string name="app_info_name">App Info</string>
+    <string name="version_name">Version:</string>
     <string name="version_number_name">1.3.5</string>
-    <string name="builder_name">开发者：</string>
+    <string name="builder_name">Developer:</string>
     <string name="dev_name">HuiChe</string>
 
-    <string name="qqChat">加入QQ频道</string>
-    <string name="qqChatHint">欢迎杂谈吹水|反馈|建议</string>
-    <string name="github">仓库地址</string>
-    <string name="githubHint">在仓库中查看项目源代码</string>
-    <string name="ty">支持开发</string>、
-    <string name="tyHint">为项目发电</string>
+    <string name="qqChat">Join QQ Channel</string>
+    <string name="qqChatHint">Welcome to chat|feedback|suggestions</string>
+    <string name="github">Repository</string>
+    <string name="githubHint">View project source code in the repository</string>
+    <string name="ty">Support Development</string>
+    <string name="tyHint">Support the project</string>
 
-    <string name="keep_app">后台保活</string>
-    <string name="keep_app_hint">允许应用保留后台</string>
+    <string name="keep_app">Background Keep-Alive</string>
+    <string name="keep_app_hint">Allow the app to stay active in the background</string>
 </resources>
