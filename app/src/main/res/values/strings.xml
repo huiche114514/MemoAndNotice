@@ -1,5 +1,13 @@
 <resources>
-    <string name="egg">Meow~</string>
+    <string name="java_notification_hint">The content cannot be empty.</string>
+    <string name="java_notification_channel">Notification Channel</string>
+    <string name="java_on_going_notification">Persistent notification reminder</string>
+    <string name="java_dialog_toast_text">Without notification permissions, the app cannot work properly.</string>
+    <string name="java_dialog_text">Notification Permissions</string>
+    <string name="java_dialog_yes">Open</string>
+    <string name="java_dialog_no">No</string>
+
+    <string name="egg">Nya~</string>
     <string name="app_name">Memo and notice</string>
     <string name="layout_name">About</string>
     <string name="setting_name">Settings</string>

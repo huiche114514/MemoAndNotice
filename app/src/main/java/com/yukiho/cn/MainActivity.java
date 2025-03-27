@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImmersiveUtils.setImmersiveMode(this);
-        boolean isDarkMode = ThemeUtils.isSystemInDarkMode(this);
 
+        boolean isDarkMode = ThemeUtils.isSystemInDarkMode(this);
         NotificationPermissionManager permissionManager = new NotificationPermissionManager(this, isDarkMode);
         permissionManager.checkAndRequestNotificationPermission();
 
@@ -68,11 +68,11 @@ public class MainActivity extends AppCompatActivity {
                     toggleButton.setText(R.string.send);
                 } else {
                     if (!content.isEmpty()) {
-                        showNotification(title.isEmpty() ? "通知备忘" : title, content);
+                        showNotification(title.isEmpty() ? getString(R.string.app_name) : title, content);
                         isNotificationShown = true;
                         toggleButton.setText(R.string.hide);
                     } else {
-                        Toast.makeText(MainActivity.this, "内容不能为空", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, getString(R.string.java_notification_hint), Toast.LENGTH_SHORT).show();
                     }
                 }
             }

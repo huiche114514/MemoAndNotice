@@ -1,4 +1,12 @@
 <resources>
+    <string name="java_notification_hint">内容不能为空</string>
+    <string name="java_notification_channel">通知渠道</string>
+    <string name="java_on_going_notification">通知备忘常驻通知</string>
+    <string name="java_dialog_toast_text">没有通知权限，应用将无法正常工作</string>
+    <string name="java_dialog_text">为了使应用正常工作，请开启通知权限。</string>
+    <string name="java_dialog_yes">开启</string>
+    <string name="java_dialog_no">取消</string>
+
     <string name="egg">喵~</string>
     <string name="app_name">通知备忘</string>
     <string name="layout_name">关于</string>

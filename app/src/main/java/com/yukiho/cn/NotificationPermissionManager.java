@@ -41,10 +41,10 @@ public class NotificationPermissionManager {
     private void createNotificationChannel(NotificationManager notificationManager) {
         NotificationChannel channel = new NotificationChannel(
                 CHANNEL_ID,
-                "通知备忘常驻通知",
+                context.getString(R.string.java_on_going_notification),
                 NotificationManager.IMPORTANCE_DEFAULT
         );
-        channel.setDescription("通知渠道");
+        channel.setDescription(context.getString(R.string.java_notification_channel));
         notificationManager.createNotificationChannel(channel);
     }
 
@@ -52,21 +52,19 @@ public class NotificationPermissionManager {
     private void showNotificationPermissionDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         AlertDialog dialog = builder.create();
-        dialog.setMessage("为了使应用正常工作，请开启通知权限。");
+        dialog.setMessage(context.getString(R.string.java_dialog_text));
 
-        dialog.setButton(AlertDialog.BUTTON_POSITIVE, "开启", (dialog1, which) -> {
+        dialog.setButton(AlertDialog.BUTTON_POSITIVE, context.getString(R.string.java_dialog_yes), (dialog1, which) -> {
             Intent intent = new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
             intent.putExtra(Settings.EXTRA_APP_PACKAGE, context.getPackageName());
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         });
 
-        dialog.setButton(AlertDialog.BUTTON_NEGATIVE, "取消", (dialog1, which) ->
-                Toast.makeText(context, "没有通知权限，应用将无法正常工作", Toast.LENGTH_SHORT).show());
-
+        dialog.setButton(AlertDialog.BUTTON_NEGATIVE, context.getString(R.string.java_dialog_no), (dialog1, which) ->
+                Toast.makeText(context, R.string.java_dialog_toast_text, Toast.LENGTH_SHORT).show());
         dialog.show();
 
-        // 根据主题模式设置按钮颜色
         Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
         Button negativeButton = dialog.getButton(AlertDialog.BUTTON_NEGATIVE);
         if (isDarkMode) {
