@@ -1,0 +1,44 @@
+<resources>
+    <string name="java_notification_hint">내용이 비어 있을 수 없습니다.</string>
+    <string name="java_notification_channel">알림 채널</string>
+    <string name="java_on_going_notification">지속적인 알림 상기</string>
+    <string name="java_dialog_toast_text">알림 허용이 없으면 앱이 제대로 작동할 수 없습니다.</string>
+    <string name="java_dialog_text">알림 허용</string>
+    <string name="java_dialog_yes">열기</string>
+    <string name="java_dialog_no">아니오</string>
+
+    <string name="testUser0">属于れちゃん的专属构建</string>
+    <string name="testUser1">属于しちゃん的专属构建</string>
+    <string name="testUser2">属于よちゃん的专属构建</string>
+    <string name="testUser3">属于エロさん的专属构建</string>
+
+    <string name="egg">냐~</string>
+    <string name="app_name">메모와 알림</string>
+    <string name="layout_name">정보</string>
+    <string name="setting_name">설정</string>
+
+    <string name="pic_xz">큰 아이콘을 선택하려면 탭하세요</string>
+    <string name="pic_xz_hint">아이콘 선택됨</string>
+    <string name="pic_qc">선택됨(다시 탭하면 큰 아이콘을 지웁니다)</string>
+    <string name="pic_qc_hint">아이콘 지움</string>
+    <string name="editText_title_name">제목</string>
+    <string name="editText_hint_name">메모 내용</string>
+    <string name="send">보내기</string>
+    <string name="hide">숨기기</string>
+
+    <string name="app_info_name">앱 정보</string>
+    <string name="version_name">버전 :</string>
+    <string name="version_number_name">1.4.0</string>
+    <string name="builder_name">개발자 :</string>
+    <string name="dev_name">HuiChe</string>
+
+    <string name="qqChat">QQ 채널 참여</string>
+    <string name="qqChatHint">대화 | 피드백 | 제안에 오신 것을 환영합니다</string>
+    <string name="github">저장소</string>
+    <string name="githubHint">저장소에서 프로젝트 소스 코드 보기</string>
+    <string name="ty">개발 지원</string>
+    <string name="tyHint">프로젝트를 지원하세요</string>
+
+    <string name="keep_app">백그라운드 유지</string>
+    <string name="keep_app_hint">앱이 백그라운드에서 활성 상태로 유지되도록 허용</string>
+</resources>

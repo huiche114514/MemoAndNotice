@@ -1,0 +1,44 @@
+<resources>
+    <string name="java_notification_hint">内容が空欄できません。</string>
+    <string name="java_notification_channel">通知チャンネル</string>
+    <string name="java_on_going_notification">常駐通知リマインダー</string>
+    <string name="java_dialog_toast_text">通知権限がないと、アプリは正常に動作しません。</string>
+    <string name="java_dialog_text">通知権限</string>
+    <string name="java_dialog_yes">開く</string>
+    <string name="java_dialog_no">いいえ</string>
+
+    <string name="testUser0">属于れちゃん的专属构建</string>
+    <string name="testUser1">属于しちゃん的专属构建</string>
+    <string name="testUser2">属于よちゃん的专属构建</string>
+    <string name="testUser3">属于エロさん的专属构建</string>
+
+    <string name="egg">にゃ～</string>
+    <string name="app_name">メモと通知</string>
+    <string name="layout_name">情報</string>
+    <string name="setting_name">設定</string>
+
+    <string name="pic_xz">大きなアイコンを選択するにはタップしてください</string>
+    <string name="pic_xz_hint">アイコンが選択されました</string>
+    <string name="pic_qc">選択済み（再度タップすると大きなアイコンをクリアします）</string>
+    <string name="pic_qc_hint">アイコンがクリアされました</string>
+    <string name="editText_title_name">タイトル</string>
+    <string name="editText_hint_name">メモの内容</string>
+    <string name="send">送信</string>
+    <string name="hide">隠す</string>
+
+    <string name="app_info_name">アプリ情報</string>
+    <string name="version_name">バージョン：</string>
+    <string name="version_number_name">1.4.0</string>
+    <string name="builder_name">開発者：</string>
+    <string name="dev_name">HuiChe</string>
+
+    <string name="qqChat">QQチャンネルに参加する</string>
+    <string name="qqChatHint">チャット | フィードバック | 意見にようこそ</string>
+    <string name="github">リポジトリ</string>
+    <string name="githubHint">リポジトリでプロジェクトのソースコードを表示する</string>
+    <string name="ty">開発を支援する</string>
+    <string name="tyHint">プロジェクトを支援する</string>
+
+    <string name="keep_app">バックグラウンドでアクティブ</string>
+    <string name="keep_app_hint">アプリがバックグラウンドでアクティブな状態を維持できるようにする</string>
+</resources>
