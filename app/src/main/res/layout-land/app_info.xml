@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/info_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/L_R_dimen_land"
     android:background="?attr/backgroundColor"
     tools:context=".InfoActivity">
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:background="?attr/backgroundColor"
         tools:context=".InfoActivity">
         <TextView
@@ -27,7 +29,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="240dp"
-            android:layout_marginTop="110dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
             android:background="@drawable/background_bg">
             <RelativeLayout
@@ -71,7 +73,8 @@
                     android:gravity="center"
                     android:text="@string/app_info_name"
                     android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
                     tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
                 </TextView>
                 <Space
@@ -86,8 +89,7 @@
                         android:layout_height="25dp"
                         android:gravity="center"
                         android:text="@string/version_name"
-                        android:textColor="?attr/colorPrimaryDark"
-                        android:textSize="16sp"
+                        style="@style/Compat_title"
                         tools:ignore="HardcodedText,TextSizeCheck">
                     </TextView>
                     <TextView
@@ -96,8 +98,7 @@
                         android:gravity="center"
                         android:layout_alignParentEnd="true"
                         android:text="@string/version_number_name"
-                        android:textColor="?attr/colorPrimaryDark"
-                        android:textSize="14sp"
+                        style="@style/Compat_content"
                         tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
                     </TextView>
                 </RelativeLayout>
@@ -113,8 +114,7 @@
                         android:layout_height="25dp"
                         android:gravity="center"
                         android:text="@string/builder_name"
-                        android:textColor="?attr/colorPrimaryDark"
-                        android:textSize="16sp"
+                        style="@style/Compat_title"
                         tools:ignore="HardcodedText,TextSizeCheck">
                     </TextView>
                     <TextView
@@ -123,103 +123,86 @@
                         android:gravity="center"
                         android:layout_alignParentEnd="true"
                         android:text="@string/dev_name"
-                        android:textColor="?attr/colorPrimaryDark"
-                        android:textSize="14sp"
+                        style="@style/Compat_content"
                         tools:ignore="HardcodedText,RelativeOverlap,TextSizeCheck">
                     </TextView>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listMode"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="360dp"
-            android:background="@drawable/background_bg"
-            android:orientation="vertical">
-            <LinearLayout
-                android:id="@+id/tgChat"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/button_ripple_bg"
-                android:paddingHorizontal="@dimen/Text_L_R_dimen"
-                android:paddingVertical="5dp"
-                tools:ignore="UselessParent,TextSizeCheck">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:gravity="center"
-                    android:text="@string/qqChat"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
-                    tools:ignore="RtlSymmetry,TextSizeCheck">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:gravity="center"
-                    android:text="@string/qqChatHint"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="14sp"
-                    tools:ignore="RelativeOverlap,TextSizeCheck">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_bg">
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/Github"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                style="@style/Compat_title"
+                app:icon="@drawable/github_ic"
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorPrimaryDark"
+                app:layout_constraintBottom_toTopOf="@+id/tgChat"
+                app:layout_constraintLeft_toLeftOf="@+id/listMode"
+                app:layout_constraintRight_toLeftOf="@+id/list_button1"
+                app:layout_constraintTop_toTopOf="@+id/listMode"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:background="@drawable/button_ripple_bg"
-                android:paddingHorizontal="@dimen/Text_L_R_dimen"
-                android:paddingVertical="5dp"
-                tools:ignore="UselessParent,TextSizeCheck">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:gravity="center"
-                    android:text="@string/github"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
-                    tools:ignore="RtlSymmetry,TextSizeCheck">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:gravity="center"
-                    android:text="@string/githubHint"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="14sp"
-                    tools:ignore="RelativeOverlap,TextSizeCheck">
-                </TextView>
-            </LinearLayout>
-            <LinearLayout
+                android:gravity="center"
+                android:text="@string/github"
+                tools:ignore="VisualLintButtonSize">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/list_button1"
+                style="@style/Compat_title"
+                app:icon="@drawable/privacy_ic"
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorPrimaryDark"
+                app:layout_constraintBottom_toTopOf="@+id/ty"
+                app:layout_constraintLeft_toRightOf="@+id/Github"
+                app:layout_constraintRight_toRightOf="@+id/listMode"
+                app:layout_constraintTop_toTopOf="@+id/listMode"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/button_ripple_bg"
+                android:gravity="center"
+                android:text="@string/provision"
+                tools:ignore="VisualLintButtonSize">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tgChat"
+                style="@style/Compat_title"
+                app:icon="@drawable/qq_ic"
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="@+id/listMode"
+                app:layout_constraintLeft_toLeftOf="@+id/listMode"
+                app:layout_constraintRight_toLeftOf="@+id/ty"
+                app:layout_constraintTop_toBottomOf="@+id/Github"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/button_ripple_bg"
+                android:gravity="center"
+                android:text="@string/qqChat"
+                tools:ignore="VisualLintButtonSize">
+            </com.google.android.material.button.MaterialButton>
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/ty"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                style="@style/Compat_title"
+                app:icon="@drawable/ty_ic"
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="@+id/listMode"
+                app:layout_constraintLeft_toRightOf="@+id/tgChat"
+                app:layout_constraintRight_toRightOf="@+id/listMode"
+                app:layout_constraintTop_toBottomOf="@+id/list_button1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:background="@drawable/button_ripple_bg"
-                android:paddingHorizontal="@dimen/Text_L_R_dimen"
-                android:paddingVertical="5dp"
-                tools:ignore="UselessParent,TextSizeCheck">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:gravity="center"
-                    android:text="@string/ty"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
-                    tools:ignore="RtlSymmetry,TextSizeCheck">
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:gravity="center"
-                    android:text="@string/tyHint"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="14sp"
-                    tools:ignore="RelativeOverlap,TextSizeCheck">
-                </TextView>
-            </LinearLayout>
-        </LinearLayout>
-    </RelativeLayout>
+                android:gravity="center"
+                android:text="@string/ty"
+                tools:ignore="VisualLintButtonSize">
+            </com.google.android.material.button.MaterialButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </ScrollView>

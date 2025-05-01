@@ -12,4 +12,19 @@
     <style name="CustomAlertDialog" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <item name="android:background">@color/colorPrimary_night</item>
     </style>
+    <style name="Compat_title">
+        <item name="android:textColor">@color/colorPrimaryDark_night</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Compat_content">
+        <item name="android:textColor">@color/colorPrimaryDark_night</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="click_Compat">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/button_ripple_bg</item>
+    </style>
 </resources>

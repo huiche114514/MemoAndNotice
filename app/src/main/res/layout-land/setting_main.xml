@@ -30,27 +30,22 @@
                 android:id="@+id/KeepApp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/button_ripple_bg"
+                style="@style/click_Compat"
                 android:paddingHorizontal="@dimen/Text_L_R_dimen"
                 android:paddingVertical="5dp"
                 tools:ignore="UselessParent,TextSizeCheck">
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:gravity="center"
+                    android:layout_height="24dp"
                     android:text="@string/keep_app"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="18sp"
+                    style="@style/Compat_title"
                     tools:ignore="RtlSymmetry,TextSizeCheck">
                 </TextView>
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="20dp"
-                    android:gravity="center"
+                    android:layout_height="18dp"
                     android:text="@string/keep_app_hint"
-                    android:textColor="?attr/colorPrimaryDark"
-                    android:textSize="14sp"
+                    style="@style/Compat_content"
                     tools:ignore="RelativeOverlap,TextSizeCheck">
                 </TextView>
             </LinearLayout>

@@ -32,6 +32,8 @@
     <string name="builder_name">Developer:</string>
     <string name="dev_name">HuiChe</string>
 
+    <string name="provision">隐私条款</string>
+    <string name="provisionHint">查看我们的条款</string>
     <string name="qqChat">Join QQ Channel</string>
     <string name="qqChatHint">Welcome to chat|feedback|suggestions</string>
     <string name="github">Repository</string>

@@ -31,13 +31,11 @@
     <string name="version_number_name">1.4.0</string>
     <string name="builder_name">开发者：</string>
     <string name="dev_name">HuiChe</string>
-
+    
+    <string name="provision">隐私条款</string>
     <string name="qqChat">加入QQ频道</string>
-    <string name="qqChatHint">欢迎杂谈吹水|反馈|建议</string>
     <string name="github">仓库地址</string>
-    <string name="githubHint">在仓库中查看项目源代码</string>
     <string name="ty">支持开发</string>、
-    <string name="tyHint">为项目发电</string>
 
     <string name="keep_app">后台保活</string>
     <string name="keep_app_hint">允许应用保留后台</string>
