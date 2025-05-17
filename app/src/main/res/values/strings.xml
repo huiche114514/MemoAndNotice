@@ -12,7 +12,8 @@
     <string name="testUser2">属于よちゃん的专属构建</string>
     <string name="testUser3">属于エロさん的专属构建</string>
 
-    <string name="egg">Nya~</string>
+    <string name="egg1">Nya~</string>
+    <string name="egg2">Let\'s explore this area later.</string>
     <string name="app_name">Memo and notice</string>
     <string name="layout_name">About</string>
     <string name="setting_name">Settings</string>
@@ -32,15 +33,10 @@
     <string name="builder_name">Developer:</string>
     <string name="dev_name">HuiChe</string>
 
-    <string name="provision">隐私条款</string>
-    <string name="provisionHint">查看我们的条款</string>
+    <string name="provision">Privacy Policy</string>
     <string name="qqChat">Join QQ Channel</string>
-    <string name="qqChatHint">Welcome to chat|feedback|suggestions</string>
     <string name="github">Repository</string>
-    <string name="githubHint">View project source code in the repository</string>
     <string name="ty">Support Development</string>
-    <string name="tyHint">Support the project</string>
 
     <string name="keep_app">Background Keep-Alive</string>
-    <string name="keep_app_hint">Allow the app to stay active in the background</string>
 </resources>

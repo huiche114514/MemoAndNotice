@@ -12,7 +12,7 @@
     <string name="testUser2">属于よちゃん的专属构建</string>
     <string name="testUser3">属于エロさん的专属构建</string>
 
-    <string name="egg">喵~</string>
+    <string name="egg2">前面的區域，以後再來探索吧</string>
     <string name="app_name">通知備忘</string>
     <string name="layout_name">關於</string>
     <string name="setting_name">設定</string>
@@ -32,15 +32,11 @@
     <string name="builder_name">開發者：</string>
     <string name="dev_name">HuiChe</string>
 
-    <string name="provision">隐私条款</string>
-    <string name="provisionHint">查看我们的条款</string>
+    <string name="provision">隱私權條款</string>
     <string name="qqChat">加入QQ頻道</string>
-    <string name="qqChatHint">歡迎閒聊|回饋|建議</string>
     <string name="github">倉庫地址</string>
-    <string name="githubHint">在倉庫中查看專案原始碼</string>
     <string name="ty">支持開發</string>
-    <string name="tyHint">為專案貢獻力量</string>
 
     <string name="keep_app">背景保活</string>
-    <string name="keep_app_hint">允許應用於背景中保持活躍</string>
+    <string name="egg1">喵~</string>
 </resources>

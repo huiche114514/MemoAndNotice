@@ -15,6 +15,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 
+// 通知渠道与通知权限获取模块
 public class NotificationPermissionManager {
 
     private static final String CHANNEL_ID = "channel_id";

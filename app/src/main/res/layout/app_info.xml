@@ -122,72 +122,73 @@
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginTop="10dp"
-        android:background="@drawable/background_bg">
+        android:background="@drawable/background_bg"
+        tools:ignore="TextSizeCheck">
         <com.google.android.material.button.MaterialButton
             android:id="@+id/Github"
+            style="@style/Compat_title"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/button_ripple_bg"
             android:gravity="start|center"
             android:text="@string/github"
             app:icon="@drawable/github_ic"
             app:iconGravity="textStart"
             app:iconTint="?attr/colorPrimaryDark"
-            style="@style/Compat_title"
-            android:background="@drawable/button_ripple_bg"
-            app:layout_constraintTop_toTopOf="@+id/listMode"
             app:layout_constraintBottom_toTopOf="@+id/tgChat"
             app:layout_constraintLeft_toLeftOf="@+id/listMode"
-            app:layout_constraintRight_toLeftOf="@+id/list_button1"
+            app:layout_constraintRight_toLeftOf="@+id/provision"
+            app:layout_constraintTop_toTopOf="@+id/listMode"
             tools:ignore="VisualLintButtonSize">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/list_button1"
+            android:id="@+id/provision"
+            style="@style/Compat_title"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/button_ripple_bg"
             android:gravity="start|center"
             android:text="@string/provision"
             app:icon="@drawable/privacy_ic"
             app:iconGravity="textStart"
             app:iconTint="?attr/colorPrimaryDark"
-            style="@style/Compat_title"
-            android:background="@drawable/button_ripple_bg"
-            app:layout_constraintTop_toTopOf="@+id/listMode"
             app:layout_constraintBottom_toTopOf="@+id/ty"
             app:layout_constraintLeft_toRightOf="@+id/Github"
-            app:layout_constraintRight_toRightOf="@+id/listMode">
+            app:layout_constraintRight_toRightOf="@+id/listMode"
+            app:layout_constraintTop_toTopOf="@+id/listMode">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             android:id="@+id/tgChat"
+            style="@style/Compat_title"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/button_ripple_bg"
             android:gravity="start|center"
             android:text="@string/qqChat"
             app:icon="@drawable/qq_ic"
             app:iconGravity="textStart"
             app:iconTint="?attr/colorPrimaryDark"
-            style="@style/Compat_title"
-            android:background="@drawable/button_ripple_bg"
-            app:layout_constraintTop_toBottomOf="@+id/Github"
             app:layout_constraintBottom_toBottomOf="@+id/listMode"
             app:layout_constraintLeft_toLeftOf="@+id/listMode"
             app:layout_constraintRight_toLeftOf="@+id/ty"
+            app:layout_constraintTop_toBottomOf="@+id/Github"
             tools:ignore="VisualLintButtonSize">
         </com.google.android.material.button.MaterialButton>
         <com.google.android.material.button.MaterialButton
             android:id="@+id/ty"
+            style="@style/Compat_title"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@drawable/button_ripple_bg"
             android:gravity="start|center"
             android:text="@string/ty"
             app:icon="@drawable/ty_ic"
             app:iconGravity="textStart"
             app:iconTint="?attr/colorPrimaryDark"
-            style="@style/Compat_title"
-            android:background="@drawable/button_ripple_bg"
-            app:layout_constraintTop_toBottomOf="@+id/list_button1"
             app:layout_constraintBottom_toBottomOf="@+id/listMode"
             app:layout_constraintLeft_toRightOf="@+id/tgChat"
-            app:layout_constraintRight_toRightOf="@+id/listMode">
+            app:layout_constraintRight_toRightOf="@+id/listMode"
+            app:layout_constraintTop_toBottomOf="@+id/provision">
         </com.google.android.material.button.MaterialButton>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>

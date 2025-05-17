@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+// 关于界面
 public class InfoActivity extends AppCompatActivity {
     @SuppressLint("MissingInflatedId")
     @Override
@@ -34,8 +35,11 @@ public class InfoActivity extends AppCompatActivity {
             intent.setData(Uri.parse("https://afdian.com/a/yixiaziquancile"));
             startActivity(intent);
         });
+        
+        findViewById(R.id.provision).setOnClickListener(view ->
+                Toast.makeText(InfoActivity.this,R.string.egg2,Toast.LENGTH_SHORT).show());
 
         findViewById(R.id.Egg).setOnClickListener(view ->
-                Toast.makeText(InfoActivity.this, R.string.egg,Toast.LENGTH_SHORT).show());
+                Toast.makeText(InfoActivity.this, R.string.egg1,Toast.LENGTH_SHORT).show());
     }
 }

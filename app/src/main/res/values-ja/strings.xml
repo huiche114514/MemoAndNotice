@@ -12,7 +12,7 @@
     <string name="testUser2">属于よちゃん的专属构建</string>
     <string name="testUser3">属于エロさん的专属构建</string>
 
-    <string name="egg">にゃ～</string>
+    <string name="egg2">この先のエリアは、後で探索しましょう。</string>
     <string name="app_name">メモと通知</string>
     <string name="layout_name">情報</string>
     <string name="setting_name">設定</string>
@@ -32,15 +32,11 @@
     <string name="builder_name">開発者：</string>
     <string name="dev_name">HuiChe</string>
 
-    <string name="provision">隐私条款</string>
-    <string name="provisionHint">查看我们的条款</string>
+    <string name="provision">プライバシーポリシー</string>
     <string name="qqChat">QQチャンネルに参加する</string>
-    <string name="qqChatHint">チャット | フィードバック | 意見にようこそ</string>
     <string name="github">リポジトリ</string>
-    <string name="githubHint">リポジトリでプロジェクトのソースコードを表示する</string>
     <string name="ty">開発を支援する</string>
-    <string name="tyHint">プロジェクトを支援する</string>
 
     <string name="keep_app">バックグラウンドでアクティブ</string>
-    <string name="keep_app_hint">アプリがバックグラウンドでアクティブな状態を維持できるようにする</string>
+    <string name="egg1">にゃ～</string>
 </resources>

@@ -17,6 +17,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
+// 核心功能
 public class MainActivity extends AppCompatActivity {
 
     private boolean isNotificationShown = false;

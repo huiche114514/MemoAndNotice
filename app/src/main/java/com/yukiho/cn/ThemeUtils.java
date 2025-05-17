@@ -3,6 +3,7 @@ package com.yukiho.cn;
 import android.content.Context;
 import android.content.res.Configuration;
 
+// 应用主题判断模块
 public class ThemeUtils {
 
     public static boolean isSystemInDarkMode(Context context) {

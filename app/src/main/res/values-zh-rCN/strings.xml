@@ -12,7 +12,7 @@
     <string name="testUser2">属于よちゃん的专属构建</string>
     <string name="testUser3">属于エロさん的专属构建</string>
 
-    <string name="egg">喵~</string>
+    <string name="egg2">前面的区域，以后再来探索吧</string>
     <string name="app_name">通知备忘</string>
     <string name="layout_name">关于</string>
     <string name="setting_name">设置</string>
@@ -38,5 +38,5 @@
     <string name="ty">支持开发</string>、
 
     <string name="keep_app">后台保活</string>
-    <string name="keep_app_hint">允许应用保留后台</string>
+    <string name="egg1">喵~</string>
 </resources>

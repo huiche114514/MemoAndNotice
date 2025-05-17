@@ -9,9 +9,10 @@ import android.widget.TextView;
 
 import java.io.IOException;
 
+// 大图标设置模块
 public class LargeIconHelper {
 
-    private static final int REQUEST_CODE_PICK_IMAGE = 1; // 图片选择请求码
+    private static final int REQUEST_CODE_PICK_IMAGE = 1;
 
     private final Context context;
     private final TextView picText;

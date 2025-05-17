@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.core.view.WindowInsetsCompat.Type;
 
+// 状态栏与导航沉浸模块
 public class ImmersiveUtils {
 
     public static void setImmersiveMode(Activity activity) {

@@ -10,6 +10,7 @@ import android.provider.Settings;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+// 设置页面
 public class SettingActivity extends AppCompatActivity {
     @SuppressLint({"MissingInflatedId", "BatteryLife"})
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -20,7 +21,7 @@ public class SettingActivity extends AppCompatActivity {
 
         ImmersiveUtils.setImmersiveMode(this);
 
-        findViewById(R.id.KeepApp).setOnClickListener(v -> {
+        findViewById(R.id.keepApp).setOnClickListener(v -> {
             Intent intent = new Intent();
             intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
             intent.setData(Uri.parse("package:" + getPackageName()));

@@ -12,7 +12,7 @@
     <string name="testUser2">属于よちゃん的专属构建</string>
     <string name="testUser3">属于エロさん的专属构建</string>
 
-    <string name="egg">냐~</string>
+    <string name="egg2">앞의 지역은 나중에 탐험하자.</string>
     <string name="app_name">메모와 알림</string>
     <string name="layout_name">정보</string>
     <string name="setting_name">설정</string>
@@ -32,15 +32,11 @@
     <string name="builder_name">개발자 :</string>
     <string name="dev_name">HuiChe</string>
 
-    <string name="provision">隐私条款</string>
-    <string name="provisionHint">查看我们的条款</string>
+    <string name="provision">개인정보 처리방침</string>
     <string name="qqChat">QQ 채널 참여</string>
-    <string name="qqChatHint">대화 | 피드백 | 제안에 오신 것을 환영합니다</string>
     <string name="github">저장소</string>
-    <string name="githubHint">저장소에서 프로젝트 소스 코드 보기</string>
     <string name="ty">개발 지원</string>
-    <string name="tyHint">프로젝트를 지원하세요</string>
 
     <string name="keep_app">백그라운드 유지</string>
-    <string name="keep_app_hint">앱이 백그라운드에서 활성 상태로 유지되도록 허용</string>
+    <string name="egg1">냐~</string>
 </resources>
